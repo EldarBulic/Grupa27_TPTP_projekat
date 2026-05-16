@@ -51,7 +51,20 @@
                     <tr><td>Dodaci</td><td>-</td><td>Slatki sto, rasvjeta</td><td>Po dogovoru</td></tr>
                 </tbody>
             </table>
-
+     <div class="interactive-map-container">
+                <h2 class="section-title map-title">Brza Navigacija (Interaktivna Slika)</h2>
+                <p class="map-description">*Kliknite na <strong>lijevu polovinu</strong> slike da skočite na detalje jelovnika, a na <strong>desnu polovinu</strong> za pregled galerije.</p>
+                
+                <img src="images/mapa.jpeg" 
+                     alt="Navigacija: Jelovnik i Galerija" 
+                     usemap="#navmap" 
+                     class="interactive-map-img">
+                
+                <map name="navmap">
+                    <area shape="rect" coords="0,0,400,400" href="#jelovnik" alt="Jelovnik" title="Skoči na strukturu menija">
+                    <area shape="rect" coords="400,0,800,400" href="#galerija" alt="Galerija" title="Skoči na galeriju slika">
+                </map>
+            </div>
 
 
 
