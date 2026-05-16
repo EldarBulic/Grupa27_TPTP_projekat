@@ -71,3 +71,57 @@ Spoiler
     if(guestInput) guestInput.addEventListener('input', calculatePrice);
     if(packageSelect) packageSelect.addEventListener('change', calculatePrice);
 });
+// ==========================================
+    // 4. VALIDACIJA FORME (ISKLJUČIVO JS REGEX)
+    // ==========================================
+    const form = document.getElementById('reservationForm');
+    const btnReset = document.querySelector('button[type="reset"]');
+
+    if(form) {
+        form.addEventListener('submit', function(e) {
+            e.preventDefault(); 
+
+            document.querySelectorAll('.error-text').forEach(err => err.style.display = 'none');
+            document.querySelectorAll('input, select, textarea').forEach(el => el.style.borderColor = '#ccc');
+
+            const ime = document.getElementById('ime');
+            const prezime = document.getElementById('prezime');
+            const email = document.getElementById('email');
+            const telefon = document.getElementById('telefon');
+            const paket = document.getElementById('packageSelect');
+            const poruka = document.getElementById('poruka');
+
+            // AI asistencija: Regex obrasci za validaciju
+            const emailRegex = /^[^\s@]+@[^\s@]+.[^\s@]{2,}$/;
+            const phoneRegex = /^[\d\s+-]+$/;
+
+            let isValid = true;
+
+            function prikaziGresku(element, idGreske) {
+                document.getElementById(idGreske).style.display = 'block';
+                element.style.borderColor = '#e74c3c';
+                isValid = false;
+            }
+           if(ime.value.trim() === "") prikaziGresku(ime, 'imeError');
+            if(prezime.value.trim() === "") prikaziGresku(prezime, 'prezimeError');
+            if(!emailRegex.test(email.value)) prikaziGresku(email, 'emailError');
+            if(!phoneRegex.test(telefon.value) || telefon.value.trim() === "") prikaziGresku(telefon, 'telefonError');
+            if(paket.value === "") prikaziGresku(paket, 'paketError');
+            if(poruka.value.trim().length === 0) prikaziGresku(poruka, 'porukaError');
+
+            if(isValid) {
+                const modal = document.getElementById('successModal');
+                const text = document.getElementById('successText');
+                text.innerText = Poštovani/a ${ime.value.trim()}, Vaš upit za rezervaciju je uspješno poslan!;
+                modal.style.display = 'block';
+            }
+        });
+
+        if(btnReset) {
+            btnReset.addEventListener('click', () => {
+                document.querySelectorAll('.error-text').forEach(err => err.style.display = 'none');
+                document.querySelectorAll('input, select, textarea').forEach(el => el.style.borderColor = '#ccc');
+                setTimeout(calculatePrice, 50); 
+            });
+        }
+    }
