@@ -23,4 +23,30 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     }
+// ==========================================
+    // 2. FILTRIRANJE KARTICA BEZ RELOADA
+    // ==========================================
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const cards = document.querySelectorAll('.card');
+
+    filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            filterBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+
+            const filterValue = btn.getAttribute('data-filter');
+
+            cards.forEach(card => {
+                const category = card.getAttribute('data-category');
+                if (filterValue === 'sve' || category === filterValue) {
+                    card.style.display = 'block';
+                    card.style.animation = 'none';
+                    card.offsetHeight; /* restart animacije */
+                    card.style.animation = 'fadeIn 0.5s ease forwards';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    });   
 });
