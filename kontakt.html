@@ -32,6 +32,74 @@
             </div>
         </div>
     </header>
+     <div class="content-wrapper" style="justify-content: center;">
+        <main class="main-content" style="max-width: 800px;">
+            <h2 class="section-title">Pošaljite Upit za Rezervaciju</h2>
+            
+            <div class="reservation-card">
+                <form id="reservationForm" novalidate>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label>Ime</label>
+                            <input type="text" id="ime" placeholder="Vaše ime">
+                            <span class="error-text" id="imeError">Polje ime je obavezno.</span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Prezime</label>
+                            <input type="text" id="prezime" placeholder="Vaše prezime">
+                            <span class="error-text" id="prezimeError">Polje prezime je obavezno.</span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Email adresa</label>
+                            <input type="email" id="email" placeholder="vas@email.com">
+                            <span class="error-text" id="emailError">Unesite ispravan email format.</span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Broj telefona</label>
+                            <input type="text" id="telefon" placeholder="061 000 000">
+                            <span class="error-text" id="telefonError">Unesite samo brojeve i razmake.</span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Broj gostiju (Za kalkulator)</label>
+                            <input type="number" id="guestCount" value="100" min="1">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Odaberite Paket</label>
+                            <select id="packageSelect">
+                                <option value="">-- Odaberite --</option>
+                                <option value="65">Classic (65 KM)</option>
+                                <option value="75">Classic Plus (75 KM)</option>
+                                <option value="90">Premium (90 KM)</option>
+                            </select>
+                            <span class="error-text" id="paketError">Molimo odaberite željeni paket.</span>
+                        </div>
+                        
+                        <div class="form-group full-width">
+                            <label>Poruka i dodatne želje</label>
+                            <textarea id="poruka" rows="4" placeholder="Vaša poruka..."></textarea>
+                            <span class="error-text" id="porukaError">Poruka mora sadržavati tekst.</span>
+                        </div>
+                    </div>
+                    
+                    <div class="form-footer">
+                        <div class="price-display">
+                            <p>Procijenjena cijena svadbe:</p>
+                            <h3 id="totalPrice">0 KM</h3>
+                        </div>
+                        <div class="form-actions-btn">
+                            <button type="reset" class="submit-btn" style="background:#888;">Očisti formu</button>
+                            <button type="submit" class="submit-btn">Pošalji upit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
 <footer class="main-footer">
         <div class="footer-container">
             <div class="footer-left"><p>© 2026 INFINITY</p></div>
