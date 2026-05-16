@@ -48,5 +48,26 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
             });
         });
-    });   
+    }); 
+   // ==========================================
+    // 3. KALKULATOR CIJENE
+    // ==========================================
+    const guestInput = document.getElementById('guestCount');
+    const packageSelect = document.getElementById('packageSelect');
+    const totalPriceDisplay = document.getElementById('totalPrice');
+
+    function calculatePrice() {
+        if(!guestInput  !packageSelect 
+Spoiler
+ !totalPriceDisplay) return;
+        const guests = parseInt(guestInput.value)  0;
+        const pricePerPerson = parseInt(packageSelect.value) 
+Spoiler
+ 0;
+        const total = guests * pricePerPerson;
+        totalPriceDisplay.innerText = total + " KM";
+    }
+
+    if(guestInput) guestInput.addEventListener('input', calculatePrice);
+    if(packageSelect) packageSelect.addEventListener('change', calculatePrice);
 });
