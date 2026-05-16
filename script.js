@@ -125,3 +125,8 @@ Spoiler
             });
         }
     }
+function closeModal() {
+    document.getElementById('successModal').style.display = 'none';
+    const form = document.getElementById('reservationForm');
+    if(form) form.reset();
+}
