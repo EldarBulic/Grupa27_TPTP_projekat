@@ -7,8 +7,8 @@ Web stranica "Svadbeni salon Infinity" zamišljen je kao interaktivna stranica k
 | Ime i prezime | GitHub | Zaduzenje |
 |---|---|---|
 | Eldin Maleškić | @Eldin21        | JavaScript       |
-| Emir Muminović | @emirmuminovic1 | CSS + dizajn     |
-| Eldar Bulić    | @EldarBulic     | HTML + struktura |
+| Emir Muminović | @emirmuminovic1 | HTML + struktura |
+| Eldar Bulić    | @EldarBulic     | CSS + dizajn     |
 
 ## Tehnologije
 - HTML5
