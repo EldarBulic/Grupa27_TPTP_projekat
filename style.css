@@ -1,1 +1,44 @@
+/* GOOGLE FONTOVI */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Cormorant+Garamond:wght@400;600&display=swap');
 
+/* CSS VARIJABLE */
+:root {
+    --primary: #c5a059;       
+    --bg: #fdfaf5;            
+    --text: #4a4a4a;          
+    --card: #ffffff;          
+    --header-footer: #ffffff; 
+    --sub-text: #8b8b8b;      
+    --border: rgba(0,0,0,0.1);
+}
+
+/* TAMNI MOD */
+body.dark-mode {
+    --bg: #121212;
+    --text: #e0e0e0;
+    --card: #1e1e1e;
+    --header-footer: #1a1a1a;
+    --sub-text: #aaaaaa;      
+    --border: rgba(255,255,255,0.1);
+}
+
+ /* RESET STILOVA I OSNOVNI LAYOUT */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body { 
+    font-family: 'Cormorant Garamond', serif; 
+    background: var(--bg); 
+    color: var(--text); 
+    transition: background-color 0.3s, color 0.3s; 
+    animation: fadeIn 0.8s ease-out; 
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Osigurava da body zauzima minimalno 100% visine ekrana */
+}
+
+/* ANIMACIJA POJAVLJIVANJA */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
