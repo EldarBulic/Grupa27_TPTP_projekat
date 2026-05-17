@@ -150,9 +150,8 @@ body {
     color: white; 
 }
 
-/* ========================= */
 /* WRAPPER I OSTALI LAYOUT */
-/* ========================= */
+
 .content-wrapper { 
     display: flex; 
     max-width: 1400px; 
@@ -247,9 +246,8 @@ body {
     margin-top: 8px; 
 }
 
-/* ========================= */
 /* KARTICE GRID */
-/* ========================= */
+
 .card-grid { 
     display: grid; 
     grid-template-columns: repeat(3, 1fr); 
