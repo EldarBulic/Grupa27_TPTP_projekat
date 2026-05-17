@@ -16,7 +16,7 @@ Web stranica "Svadbeni salon Infinity" zamišljen je kao interaktivna stranica k
 - JavaScript (bez biblioteka)
 
 ## AI alati koristeni u projektu
--Google Gemini: Generisanje slika i css(media queries)
+-Google Gemini: Generisanje slika i css(media queries i pseudo-element ::after)
 
 ## Napomene
 Sve korištene slike preuzete su sa unsplash.com (besplatne licence) ili su generisane od strane umjetne inteligencije.
