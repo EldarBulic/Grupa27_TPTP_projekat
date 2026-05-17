@@ -39,8 +39,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
             cards.forEach(card => {
                 const category = card.getAttribute('data-category');
+
+                // AI asistencija: dio logike za filtriranje sadržaja
+                // i prikaz kartica bez reload-a stranice razvijen je
+                // uz pomoć umjetne inteligencije
                 if (filterValue === 'sve' || category === filterValue) {
+                    
                     card.style.display = 'block';
+
+                    // AI asistencija: tehnika resetovanja CSS animacije
+                    // pomoću offsetHeight korištena je uz pomoć AI prijedloga
                     card.style.animation = 'none';
                     card.offsetHeight; /* restart animacije */
                     card.style.animation = 'fadeIn 0.5s ease forwards';
@@ -90,7 +98,8 @@ document.addEventListener("DOMContentLoaded", () => {
             const paket = document.getElementById('packageSelect');
             const poruka = document.getElementById('poruka');
 
-            // AI asistencija: Regex obrasci za validaciju
+            // AI asistencija: Regex obrasci za validaciju email adrese
+            // i telefonskog broja kreirani su uz pomoć umjetne inteligencije
             const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
             const phoneRegex = /^[\d\s\+\-]+$/;
 
