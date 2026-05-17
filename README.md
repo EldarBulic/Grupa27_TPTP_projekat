@@ -1,7 +1,7 @@
 # Grupa27_TPTP_projekat
 
 ## O projektu
-Web stranica "Svadbeni salon Infinity" zamišljen je kao interaktivna stranica koja pruža osnovne funkcionalnosti svakog svadbenog salona. To su prije svega ponuda, cjenovnik, galerija slika i kontakt forma namijenjena za rezervaciju samog salona. 
+Web stranica "Svadbeni salon Infinity" zamišljen je kao interaktivna stranica koja pruža osnovne funkcionalnosti svakog svadbenog salona. To su prije svega ponuda, cjenovnik, galerija slika i kontakt forma namijenjena za rezervaciju salona i usluga koje pruža. 
 
 ## Članovi grupe
 | Ime i prezime | GitHub | Zaduzenje |
@@ -16,7 +16,7 @@ Web stranica "Svadbeni salon Infinity" zamišljen je kao interaktivna stranica k
 - JavaScript (bez biblioteka)
 
 ## AI alati koristeni u projektu
--Google Gemini: Generisanje slika
+-Google Gemini: Generisanje slika i css(media queries)
 
 ## Napomene
 Sve korištene slike preuzete su sa unsplash.com (besplatne licence) ili su generisane od strane umjetne inteligencije.
