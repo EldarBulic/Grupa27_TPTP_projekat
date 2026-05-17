@@ -426,3 +426,134 @@ body {
 .back-to-top-btn { 
     font-weight: bold; 
 }
+
+/* FORMA I MODAL */
+.reservation-card { 
+    background: var(--card); 
+    padding: 30px; 
+    border-radius: 8px; 
+    border: 1px solid var(--border); 
+}
+
+.form-grid { 
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px; 
+}
+
+.full-width { 
+    grid-column: span 2; 
+}
+
+.form-group label { 
+    font-weight: 600; 
+    color: var(--text); 
+}
+
+.form-group input, 
+.form-group select, 
+.form-group textarea { 
+    width: 100%; 
+    padding: 12px; 
+    margin-top: 5px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    background: var(--bg); 
+    color: var(--text); 
+    font-family: inherit; 
+}
+
+.error-text { 
+    color: #e74c3c; 
+    font-size: 13px; 
+    margin-top: 5px; 
+    display: none; 
+}
+
+.form-footer { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    margin-top: 25px; 
+}
+
+.price-display h3 { 
+    color: var(--primary); 
+    font-size: 24px; 
+}
+
+.submit-btn { 
+    padding: 12px 25px; 
+    background: var(--primary); 
+    color: white; 
+    border: none; 
+    cursor: pointer; 
+    border-radius: 4px; 
+    font-size: 16px; 
+    margin-left: 10px; 
+    transition: 0.3s; 
+}
+
+.submit-btn:hover { 
+    opacity: 0.9; 
+}
+
+.modal { 
+    display: none; 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    background: rgba(0,0,0,0.6); 
+    z-index: 1000; 
+}
+
+.modal-content { 
+    background: var(--card); 
+    width: 400px; 
+    margin: 10% auto; 
+    padding: 40px; 
+    text-align: center; 
+    border-radius: 8px; 
+}
+
+.modal-icon { 
+    font-size: 50px; 
+    color: #2ecc71; 
+    margin-bottom: 15px; 
+}
+
+/* FOOTER */
+.main-footer { 
+    background: var(--header-footer); 
+    padding: 40px 0; 
+    border-top: 1px solid var(--border); 
+    margin-top: 40px; 
+}
+
+.footer-container { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    max-width: 1400px; 
+    margin: 0 auto; 
+    padding: 0 30px; 
+}
+
+.authors a { 
+    text-decoration: none; 
+    color: var(--primary); 
+    font-weight: 600; 
+    margin: 0 5px; 
+    transition: 0.3s; 
+}
+
+.authors a:hover { 
+    text-decoration: underline; 
+}
+
+.footer-right { 
+    display: flex; 
+    gap: 10px; 
+}
