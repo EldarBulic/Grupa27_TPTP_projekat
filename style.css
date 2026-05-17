@@ -236,6 +236,8 @@ body {
     color: var(--text); 
 }
 
+/* AI ASISTENCIJA: Korištenje ::after pseudo-elementa za kreiranje 
+   dekorativne linije bez dodavanja suvišnih HTML tagova. */
 .section-title::after { 
     content: ''; 
     display: block; 
